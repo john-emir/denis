@@ -142,10 +142,8 @@ window.addEventListener('scroll', () => {
 
 const iconMen = document.querySelector(".menu__icon")
 const iconbody = document.querySelector(".menu__body")
-
-
+const body = document.querySelector("body")
 const menuLink = document.querySelectorAll(".menu__link")
-console.log(iconMen)
 menuLink.forEach(function (i) {
 
     i.addEventListener("click",
@@ -156,14 +154,14 @@ menuLink.forEach(function (i) {
 
             menuLink.forEach(btn => {
                 btn.classList.remove("_add")
-		    body.classList.remove("_lock")
+		body.classList.remove("_lock")
+
             })
 
             i.classList.add("_add")
         }
     )
 })
-console.log(body)
 
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
