@@ -156,12 +156,14 @@ menuLink.forEach(function (i) {
 
             menuLink.forEach(btn => {
                 btn.classList.remove("_add")
+		    body.classList.remove("_lock")
             })
 
             i.classList.add("_add")
         }
     )
 })
+console.log(body)
 
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
